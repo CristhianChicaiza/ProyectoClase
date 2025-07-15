@@ -1,0 +1,65 @@
+
+.primary{
+    color: #e91717;
+}
+.secondary{
+    color: #24bd82;
+}
+.tertiary{
+    color: #6922b9;
+}
+.small{
+    font-size: 20px;
+}
+.medium{
+    font-size: 30px;
+}
+.large{
+    font-size: 40px;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+
+
+
+
+
+/*Textitle*/
+
+/* button*/
+/* .button{
+    background-color: #e91717; 
+    color: white;
+    font-size: 16px;
+} */
+
+/*logo*/
+.logop{
+    color: rgb(222, 31, 143);
+}
+
+/* img */
+/* .img{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: auto; 
+} */
+
+/* input */
+.input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
