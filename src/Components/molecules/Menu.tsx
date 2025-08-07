@@ -3,12 +3,11 @@ import Items from "../atoms/Items"
 
 const NavMenu: React.FC = () => {
   const navLinks = [
-    { label: "Home", href: "#agenda" },
-    { label: "Shop", href: "/Login" },
-    { label: "Shop Detail", href: "#speakers" },
+    { label: "Home", href: "/homepages" },
+    { label: "Shop", href: "/shop" },
+    { label: "Shop Detail", href: "/shopdetail" },
     { label: "Pages", href: "#registro" },
-    { label: "Contact", href: "/GalLery" },
-    { label: "footer", href: '#footer' },
+    { label: "Contact", href: "/contact" }
   ];
   return (
     <>

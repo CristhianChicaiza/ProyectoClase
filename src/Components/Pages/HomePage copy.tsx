@@ -11,12 +11,6 @@ function HomePage() {
        <Navmenu/>
        <PrincipalPage/>       
       </div>
-
-<br></br>
-
-
-<br></br>
-
       <Footer />
    
     </>

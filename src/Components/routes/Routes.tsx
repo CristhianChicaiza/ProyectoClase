@@ -1,7 +1,12 @@
 import type { JSX } from "react";
-import Gallery from "../Pages/Gallery";
-import Login from "../Pages/Login";
 import type { Role } from "../../types/auth";
+
+import Shop from "../Pages/Shop";
+import ShopDetail from "../Pages/ShopDetail";
+import HomePage from "../Pages/HomePage copy";
+import Contact from "../Pages/Contact";
+
+
 
 // type Role = 'guest' | 'admin';
 
@@ -12,6 +17,8 @@ export type AppRoute = {
 };
 
 export const appRoutes: AppRoute[] = [
-   { path: "/Login", element: <Login />, role: 'guest' },  
-   { path: "/Gallery", element: <Gallery />, role: 'guest' }
+   { path: "/contact", element: <Contact />, role: 'guest' },  
+   { path: "/homepages", element: <HomePage />, role: 'guest' },
+    { path: "/Shop", element: <Shop />, role: 'guest' },
+     { path: "/shopdetail", element: <ShopDetail />, role: 'guest' }
 ];
