@@ -7,9 +7,10 @@ import {Link} from 'react-router-dom'
 
 const PrincipalMenu: React.FC = () => {
   return (
-    <nav className="">
+    <nav className="w-full text-white">
       <div className="mx-auto flex justify-between items-center px-6 py-4 gap-4">
-        <Logo text="Fashion Clothes" />
+         <Logo textA="MULTI" textB="SHOP" />
+
         <Input placeholder='Buscar' inputType="text" id="search-input" />
      
         <Link to="Register">

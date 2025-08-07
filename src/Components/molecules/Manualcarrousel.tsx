@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Image from "../atoms/img";
+import Image from "../atoms/Img";
 import ButtonURL from "../atoms/ButtonURL";
 import category1 from "../../image/category1.jpg";
 import category2 from "../../image/category2.jpg";

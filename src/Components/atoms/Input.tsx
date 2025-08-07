@@ -9,7 +9,7 @@ interface InputProps {
 
 const Input: React.FC<InputProps> = ({inputType, id, placeholder, isDisabled, onChange})=>{
   return (<input 
-    className="border border-amber-600 p-2 rounded-full"
+    className="border border-gray-400 p-2 "
     type={inputType}
     placeholder={placeholder}
     disabled={isDisabled}

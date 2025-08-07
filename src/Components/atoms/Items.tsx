@@ -9,7 +9,7 @@ const NavItem: React.FC<NavItemProps> = ({ label, href }) => (
   <li className="whitespace-nowrap">
     <a
       href={href}
-      className="text-gray-800 hover:text-red-600 transition-colors"
+      className="text-gray-100 hover:text-yellow-300 transition-colors"
     >
       {label}
     </a>

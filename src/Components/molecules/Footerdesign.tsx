@@ -1,7 +1,11 @@
 import GeneralText from "../atoms/GeneralText";
+
 function Footerdesign() {
     return (
+        <>
+
         <footer id="footer" className="bg-blue-800 text-white py-4">
+          
             <GeneralText text="Ubicación: Av. Grandos" />
             <GeneralText text="Teléfono: 123-456-7890" />
             <GeneralText text="Correo: ccc@gmail"/>
@@ -16,7 +20,10 @@ function Footerdesign() {
                     <a href="https://instagram.com" className="text-blue-400 ml-1">Instagram</a>
                 </p>
             </div>
+
+
         </footer>
+        </>
     );
 }
     export default Footerdesign;

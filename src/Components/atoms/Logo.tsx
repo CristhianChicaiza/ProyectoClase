@@ -1,30 +1,17 @@
 import React from "react";
 
-/*
-import styles from "./atom.module.css";
 interface LogoProps {
-    onClick?: () => void;
-    label: string;
-}
-function Logo({onClick, label}: LogoProps) {
-    const logoclass = `${styles.logop}`;
-    return (
-        <div className={logoclass} onClick={onClick}>
-            <a href="#">{label}</a>
-        </div>
-    );
-} 
-export default Logo;
-*/
-
-interface LogoProps {
-  text: string;
-  variant?: "default" | "small";
-  type?: "primary" | "secondary" | "image";
+  textA: string;
+  textB: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ text }) => (
-  <h1 className="text-5x1 font-bold text-yellow-500 whitespace-nowrap">{text}</h1>
+const Logo: React.FC<LogoProps> = ({ textA, textB }) => (
+  <>
+                <a href="" className="text-decoration-none">
+                    <span className="text-4xl  font-sans text-yellow-400 bg-gray-600 px-2">{textA}</span>
+                    <span className="text-4xl font-sans Neue text-gray-600 bg-yellow-400 px-2">{textB}</span>
+                </a>
+  </>
 );
 
 export default Logo;

@@ -1,4 +1,4 @@
-import Image from "../atoms/img";
+import Image from "../atoms/Img";
 import ButtonURL from "../atoms/ButtonURL";
 import { Link } from "react-router-dom"; 
 import Footer from "../Organims/Footer";

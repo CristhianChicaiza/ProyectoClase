@@ -3,23 +3,35 @@ import Items from "../atoms/Items"
 
 const NavMenu: React.FC = () => {
   const navLinks = [
-    { label: "Information", href: "#agenda" },
-    { label: "Login", href: "/Login" },
-    { label: "Design", href: "#speakers" },
-    { label: "Catalog", href: "#registro" },
-    { label: "Galery", href: "/GalLery" },
+    { label: "Home", href: "#agenda" },
+    { label: "Shop", href: "/Login" },
+    { label: "Shop Detail", href: "#speakers" },
+    { label: "Pages", href: "#registro" },
+    { label: "Contact", href: "/GalLery" },
     { label: "footer", href: '#footer' },
   ];
   return (
-    <nav className="w-full bg-white">
-      <div className="mx-auto flex justify-center items-center px-6 py-4 gap-4">
-        <ul className="flex gap-6">
+    <>
+
+    <nav className="">
+
+      <div className="mx-auto flex justify-center items-center px-6 py-4 gap-4 bg-gray-600">
+        <div>
+          
+        </div>
+        <ul className="flex gap-6 ">
           {navLinks.map((link) => (
             <Items key={link.href} label={link.label} href={link.href} />
           ))}
         </ul>
+          <div>
+            
+          </div>
       </div>
+
     </nav>
+
+    </>
   );
 };
 export default NavMenu;

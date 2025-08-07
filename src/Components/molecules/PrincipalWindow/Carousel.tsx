@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import arrowRight from "../../../image/boxicons/arrowright.svg";
+import arrowLeft from "../../../image/boxicons/arrowleft.svg";
 
-import ButtonURL from "../atoms/ButtonURL";
-import category1 from "../../image/category1.jpg";
-import category2 from "../../image/category2.jpg";
-import category3 from "../../image/category3.jpg";
-import category4 from "../../image/category4.jpg";
+import category1 from "../../../image/category1.jpg";
+import category2 from "../../../image/category2.jpg";
+import category3 from "../../../image/category3.jpg";
+import category4 from "../../../image/category4.jpg";
 
 const AutomaticCarrousel = () => {
   const Images = [
@@ -60,12 +61,15 @@ const scrollToCurrentIndex = () => {
 
   return (
     <>
-<div>
-  {currentIndex}
-</div>
-<div className="flex flex-r items-center justify-center gap-4">
-  <ButtonURL onClick={handlePrev} label="Prev" />
 
+<div className="flex flex-r items-center justify-center gap-4 py-4">
+   <button onClick={handlePrev}>
+          <img
+            src={arrowLeft}
+            alt="Anterior"
+            className="w-10 h-10 hover:scale-105 transition-transform"
+          />
+        </button>
   <div
     ref={containerRef}
     onMouseEnter={stopAutoPlay}
@@ -77,7 +81,13 @@ const scrollToCurrentIndex = () => {
       className="h-[300px] w-[400px] object-cover rounded"
     />
   </div>
-  <ButtonURL onClick={handleNext} label="Next" />
+        <button onClick={handleNext}>
+          <img
+            src={arrowRight}
+            alt="Siguiente"
+            className="w-10 h-10 hover:scale-105 transition-transform"
+          />
+        </button>
 </div>
 </>
   );
