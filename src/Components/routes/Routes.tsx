@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import type { Role } from "../../types/auth";
 
+import Login from "../molecules/Login";
 import Shop from "../Pages/Shop";
 import ShopDetail from "../Pages/ShopDetail";
 import HomePage from "../Pages/HomePage copy";
@@ -17,6 +18,8 @@ export type AppRoute = {
 };
 
 export const appRoutes: AppRoute[] = [
+   { path: "/login", element: <Login />, role: 'guest' }, 
+
    { path: "/contact", element: <Contact />, role: 'guest' },  
    { path: "/homepages", element: <HomePage />, role: 'guest' },
     { path: "/Shop", element: <Shop />, role: 'guest' },

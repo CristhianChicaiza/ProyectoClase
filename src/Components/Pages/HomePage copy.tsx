@@ -6,10 +6,11 @@ import PrincipalPage from '../Organims/PrincipalPage'
 function HomePage() {
   return (
     <>
-      <div>
+      <div className="bg-gray-100">
         <PrincipalMenu/>
        <Navmenu/>
-       <PrincipalPage/>       
+       <PrincipalPage/>   
+           
       </div>
       <Footer />
    

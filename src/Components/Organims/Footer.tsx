@@ -8,7 +8,7 @@ function Footer() {
     return (
         <>
          <div className="bg-gray-600 text-white">
-            <div className="py-4 grid grid-cols-4 gap-4">
+            <div className="py-4 px-3 grid grid-cols-4 gap-4">
             <div>
                 <OneColumn />
             </div>

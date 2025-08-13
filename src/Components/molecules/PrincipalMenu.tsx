@@ -2,9 +2,9 @@ import React from 'react'
 import Logo from "../atoms/Logo"
 import Input from '../atoms/Input'
 import ButtonURL from '../atoms/ButtonURL'
+import search from '../../image/boxicons/search.svg'
 
 import {Link} from 'react-router-dom'
-import arrowLeft from '../../image/boxicons/arrowleft.svg'
  
 function Search() {}
 
@@ -18,15 +18,14 @@ const PrincipalMenu: React.FC = () => {
         <Input placeholder='Buscar' inputType={'Text'} id={'InText'}/>
         <button onClick={Search}>
           <img
-            src={arrowLeft}
+            src={search}
             alt="Anterior"
-            className="w-10 h-10 hover:scale-105 transition-transform"
-          />
+            className="w-10 h-10 hover:scale-105 transition-transform"/>
         </button>
-        </div>
 
-        <Link to="Register">
-            <ButtonURL label="Registrar"/>
+        </div>
+        <Link to="/Login">
+            <ButtonURL label="Login"/>
         </Link>
 
       </div>
